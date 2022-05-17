@@ -27,7 +27,7 @@ pipeline{
 			echo "All good"
 		}
 		success {
-			echo "pipeline crash"
+			echo "pipeline success"
 		}
 		failure {
 			echo "pipeline crash"
