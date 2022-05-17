@@ -1,13 +1,13 @@
 pipeline{
 	agent {
 		docker {
-			image 'node:16.13.1-alpine'
+			image 'openjdk:8-jdk-alpine'
 		}
 	}
 	stages{
 		stage('Build'){
 			steps{
-				// sh 'node --version'
+				sh 'java --version'
 				echo 'Build'				
 			}
 		}
